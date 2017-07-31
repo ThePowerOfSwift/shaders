@@ -31,15 +31,16 @@ node.shader = shader
 
 | Shader | Image  |
 |:------:|:------:|
-|[blur_box.fsh](Box blur). `u_radius=10.0; u_step=1.0`|![](src/box_10.png)|
-|[blur_box.fsh](Box blur). `u_radius=5.0; u_step=2.0`|![](src/box_5_st2.png)|
-|[blur_gauss.fsh](Box blur). `u_radius=10.0; u_step=1.0`|![](src/gauss_10.png)|
-|[blur_gauss.fsh](Box blur). `u_radius=5.0; u_step=2.0`|![](src/gauss_5_st2.png)|
-|[blur_g5x5.fsh](Box blur). `u_radius=5.0; u_step=2.0`|![](src/g5x5_st2.png)|
-|[blur_g7x7.fsh](Box blur). `u_radius=7.0; u_step=10.0/7.0`|![](src/g7x7_st1.4.png)|
+|[blur_box.fsh][blur_box]. `u_radius=10.0; u_step=1.0`|![](src/box_10.png)|
+|[blur_box.fsh][blur_box]. `u_radius=5.0; u_step=2.0`|![](src/box_5_st2.png)|
+|[blur_gauss.fsh][blur_gauss]. `u_radius=10.0; u_step=1.0`|![](src/gauss_10.png)|
+|[blur_gauss.fsh][blur_gauss]. `u_radius=5.0; u_step=2.0`|![](src/gauss_5_st2.png)|
+|[blur_g5x5.fsh][blur_g5x5]. `u_radius=5.0; u_step=2.0`|![](src/g5x5_st2.png)|
+|[blur_g7x7.fsh][blur_g7x7]. `u_radius=7.0; u_step=10.0/7.0`|![](src/g7x7_st1.4.png)|
 
 
 
-
-
-
+[blur_box]: https://github.com/ISosnovik/shaders/blob/master/blur/code/blur_box.fsh
+[blur_gauss]: https://github.com/ISosnovik/shaders/blob/master/blur/code/blur_gauss.fsh
+[blur_g5x5]: https://github.com/ISosnovik/shaders/blob/master/blur/code/blur_g5x5.fsh
+[blur_g7x7]: https://github.com/ISosnovik/shaders/blob/master/blur/code/blur_g7x7.fsh
