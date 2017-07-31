@@ -7,7 +7,7 @@ Another way of blurring is `SKShader`. It process the texture with GPU power, th
 ## Uniforms
  
 - `float u_radius` - blur radius
-- `float u_step` - the multiplier of the radius
+- `float u_step` - the multiplier of the radius. Effective radius is `u_step * u_radius`
 - `float u_sigma` - sigma in Normal Distribution (default `u_radius  / 3.0`)
 - `vec2 u_sprite_size` - size of a sprite
 
@@ -50,7 +50,7 @@ There are 2 types of blur shaders.
 
 ![](src/blur_deblur.gif)
 
-The blur effect could be animated in different ways. And the most complicated and beautiful one is the animation of the blur radius. In **SpriteKit** is implemented with `SKAttribute`.
+The blur effect could be animated in different ways. And the most complicated and beautiful one is the animation of the blur radius. In **SpriteKit** it is implemented with `SKAttribute`.
 
 ```swift
 shader.attributes = [SKAttribute(name: "u_radius", type: .float)]
